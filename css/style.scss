@@ -1,0 +1,65 @@
+$indent: 10vw;
+p{
+  min-width: 565px;
+}
+header{
+  background: rgba(0, 0, 0, 0.20);
+  flex: 0 0 auto;
+}
+html{
+  height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+.box{
+  margin: 0 $indent;
+}
+.header_name{
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+}
+.logo{
+  background: url("../img/Logo_TV_2015.svg.png")  0 0/cover no-repeat;
+  height: 3em;
+  width: 3em;
+}
+.name{
+  margin-left: 1em;
+}
+.free_text{
+  display: inline;
+  background-color: aqua;
+  padding: 0 1em;
+}
+.justify{
+  text-align: justify;
+}
+.stuff_name{
+  width: (100vw - 3*$indent) / 2;
+  text-align: center;
+}
+.cost{
+  width: (100vw - 3*$indent) / 2;
+  text-align: right;
+}
+.description{
+  width: (100vw - 3*$indent) / 2;
+}
+footer{
+  display: flex;
+  align-items: center;
+  height: 10em;
+  background: rgb(37, 37, 37);
+  color: aliceblue;
+  flex: 0 0 auto;
+}
