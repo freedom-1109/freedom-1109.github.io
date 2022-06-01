@@ -1,0 +1,102 @@
+main{
+  background: #E9E9E9;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.main-screen{
+  background: url("../../img/main bg.png") center/cover no-repeat;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.catalog{
+  background-color: #ffffff;
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+
+  .catalog-text{
+    margin-bottom: 5vh;
+  }
+  .mexican{
+    background: url("../../img/mexican.png") center/cover no-repeat;
+    border-radius: 30px;
+  }
+
+  .cheese{
+    background: url("../../img/cheese.png") center/cover no-repeat;
+    border-radius: 30px;
+  }
+
+  .classic{
+    background: url("../../img/classic.png") center/cover no-repeat;
+    border-radius: 30px;
+  }
+}
+
+.img{
+  height: 20vh;
+  margin-bottom: 10px;
+}
+
+.make-order{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.about-us1{
+  background-color: #ffffff;
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+}
+
+.about-us2{
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+
+  .personal-text{
+    margin-bottom: 5vh;
+  }
+
+  .tinkoff{
+    background: url("../../img/tinkov.jpg") center/cover no-repeat;
+    border-radius: 30px;
+  }
+
+  .johov{
+    background: url("../../img/johov.jpg") center/cover no-repeat;
+    border-radius: 30px;
+  }
+  .myhamet{
+    background: url("../../img/ahmet.png") center/cover no-repeat;
+    border-radius: 30px;
+  }
+}
+
+.catalog-menu, .personal{
+  div{
+    margin: 10px 0;
+  }
+}
+
+.top1{
+  background: url("../../img/top1.png") center/cover no-repeat;
+}
+
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}

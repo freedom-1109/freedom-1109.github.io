@@ -1,79 +1,129 @@
 <!doctype html>
-<html lang="ru">
+<html lang=ru>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>shop</title>
+    <link rel="stylesheet" href="style/normalize.css.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/my%20style/style.css">
+    <title>Лучшая шаурмашная</title>
 </head>
+
 <body>
-<header>
-    <div class="box">
-        <div class="header_name">
-            <div class="logo"></div>
-            <div class="name">Shop</div>
+<main class="content">
+    <section class="container-fluid vh-100 main-screen">
+        <div class="vh-100 container d-flex flex-column justify-content-between">
+            <div class="void"></div>
+            <div class="void"></div>
+            <p class="text-center">Шаурма у Ашота</p>
+            <nav class="row text-center main-screen_menu">
+                <a href="#catalog" class="col-12 col-md-4 main-screen_catalog">Каталог</a>
+                <a href="#make-order" class="col-12 col-md-4 main-screen_make-order">Заказать</a>
+                <a href="#about-us" class="col-12 col-md-4 main-screen_about-us">О нас</a>
+            </nav>
+            <div class="void"></div>
         </div>
-    </div>
-</header>
-<main class="box">
-    <section>
-        <h1 class="stuff_name">Lenovo ThinkPad P1 Gen 4 (20Y3006FRT)</h1>
-        <h2 class="cost">533 990 руб.</h2>
-        <div class="img">
-            <img src="img/2.webp" alt="здесь должен был быть наш товар, ты увы его нет">
-        </div>
-        <h3>Стильный, легкий, мощный</h3>
-        <p>Дисплей: 16" IPS 3840x2400 <br>
-            Процессор: Intel Core i9-11950H 2.60 ГГц<br>
-            Видеокарта: nVidia RTX A5000 16 Гб<br>
-            Оперативная память: 32 Гб DDR4<br>
-            Накопитель: SSD 1024 Гб<br>
-            Операционная система: Windows 10 Pro (ready for Windows 11)</p>
-        <div class="description">
-            <p class="justify">Мобильная рабочая станция ThinkPad P1 (4th Gen, 16, Intel)
-            сочетает функциональность и изящество форм,
-            элегантную отделку из углеродного волокна и легкую конструкцию весом всего 1,8 кг.
-            Под стильным корпусом скрывается новейший процессор 11-го поколения Intel® Core™ или Xeon®,
-            обеспечивающий непревзойденную производительность,
-            а также операционная система Microsoft Windows или Linux® на выбор.</p>
-        </div>
-
-        <hr>
-        <div class="free"><h3 class="free_text">Бесплатная доставка</h3></div>
     </section>
-    <section>
-        <h1 class="stuff_name">Lenovo ThinkPad P1 Gen 4 (20Y3006FRT)</h1>
-        <h2 class="cost">533 990 руб.</h2>
-        <div class="img">
-            <img src="img/2.webp" alt="здесь должен был быть наш товар, ты увы его нет">
+    <section class="container-fluid text-center catalog" id="catalog">
+        <p class="catalog-text">Мы готовим разную шаурму из разных ингредиентов</p>
+        <div class="container">
+            <div class="catalog-menu row">
+                <div class="col-12 col-md-4">
+                    <p>Мексиканская шаурма 120р</p>
+                    <div class="img mexican"></div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Сырная шаурма 110р</p>
+                    <div class="img cheese"></div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Класическая шаурма 100р</p>
+                    <div class="img classic"></div>
+                </div>
+            </div>
         </div>
-        <h3>Стильный, легкий, мощный</h3>
-        <p>Дисплей: 16" IPS 3840x2400 <br>
-            Процессор: Intel Core i9-11950H 2.60 ГГц<br>
-            Видеокарта: nVidia RTX A5000 16 Гб<br>
-            Оперативная память: 32 Гб DDR4<br>
-            Накопитель: SSD 1024 Гб<br>
-            Операционная система: Windows 10 Pro (ready for Windows 11)</p>
-        <div class="description">
-            <p class="justify">Мобильная рабочая станция ThinkPad P1 (4th Gen, 16, Intel)
-                сочетает функциональность и изящество форм,
-                элегантную отделку из углеродного волокна и легкую конструкцию весом всего 1,8 кг.
-                Под стильным корпусом скрывается новейший процессор 11-го поколения Intel® Core™ или Xeon®,
-                обеспечивающий непревзойденную производительность,
-                а также операционная система Microsoft Windows или Linux® на выбор.</p>
+    </section>
+    <section class="container-fluid text-center make-order" id="make-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 row">
+                    <div class="col-12 row">
+                        <div class="col-6 name">Мексиканская</div>
+                        <div class="col-6 row">
+                            <button class="col-4 btn btn-primary" id="mm">-</button>
+                            <p class="col-4 vol" id="mv">0</p>
+                            <button class="col-4 btn btn-primary" id="mp">+</button>
+                        </div>
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-6 name">Сырная</div>
+                        <div class="col-6 row">
+                            <button class="col-4 btn btn-primary" id="cm">-</button>
+                            <div class="col-4 vol" id="cv">0</div>
+                            <button class="col-4 btn btn-primary" id="cp">+</button>
+                        </div>
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-6 name">Класическая</div>
+                        <div class="col-6 row">
+                            <button class="col-4 btn btn-primary" id="clm">-</button>
+                            <div class="col-4 vol" id="clv">0</div>
+                            <button class="col-4 btn btn-primary" id="clp">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 price" id="price">0 руб</div>
+            </div>
+            <button class="btn btn-primary" id="makeOrder">Заказать</button>
         </div>
-
-        <hr>
-        <div class="free"><h3 class="free_text">Бесплатная доставка</h3></div>
+    </section>
+    <section id="about-us" class="container-fluid text-center about-us1">
+        <div class="container">
+            <div class="row">
+                <div class="img col-12 col-md-5 top1"></div>
+                <div class="col-md-1"></div>
+                <div class="text col-12 col-md-6">
+                    <p class="title">Наша шаурма топ 1</p>
+                    <p class="description">Мы готовим ее от души, только свежие, качественные ингредиенты. Кушая шаурму думаешь, вау, я что, в раю?<br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis est eveniet illum in inventore, laboriosam modi molestias nulla possimus provident quae quisquam quos sint soluta temporibus voluptatibus. Nobis, repudiandae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid text-center about-us2">
+        <p class="personal-text">Работаем уже более 10 лет</p>
+        <div class="container">
+            <div class="personal row">
+                <div class="col-12 col-md-4">
+                    <div class="img tinkoff"></div>
+                    <p>Oleg Tinkoff</p>
+                    <p>Стаж: меньше месяца</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="img myhamet"></div>
+                    <p>Ахмет Мухамет</p>
+                    <p>Стаж: 15 лет</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="img johov"></div>
+                    <p>Сергей Жохов</p>
+                    <p>Стаж: 20 лет</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8913.394403882783!2d46.73736112777351!3d56.047266781008254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a5c6221daeb11%3A0x675fa72c761f50c2!2z0JvQtdGB0L3Ri9C1INCl0LDRh9C40LrQuCwg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_LiwgNDI5NTQw!5e0!3m2!1sru!2sru!4v1652379878568!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 </main>
-<footer  class="footer">
-    <div class="footer_box box">
-        <p>&#169; Все права защищены</p>
-    </div>
-</footer>
+
+
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
